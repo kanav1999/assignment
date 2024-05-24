@@ -1,0 +1,31 @@
+/* src/components/CarListing.css */
+.car-card {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.car-details {
+  padding: 15px;
+}
+
+.car-details p {
+  margin: 5px 0;
+}
+
+.car-details p:first-child {
+  font-weight: bold;
+}

@@ -1,0 +1,156 @@
+/* src/App.css */
+.app {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.filter label {
+  margin-right: 10px;
+}
+
+.filter input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.filter input:focus {
+  border-color: #007bff;
+}
+
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.car-listing {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.car-listing:hover {
+  transform: translateY(-5px);
+}
+
+.car-listing img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.car-listing div {
+  padding: 15px;
+}
+
+.car-details {
+  padding: 15px;
+}
+
+.car-details p {
+  margin: 5px 0;
+}
+
+.car-details p:first-child {
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .car-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+/* src/App.css */
+
+/* Define animation for card hover effect */
+@keyframes cardHover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to card listings */
+.car-listing {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-listing:hover {
+  animation: cardHover 0.5s ease infinite;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* src/App.css */
+
+/* Styles for filter container */
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter label {
+  margin-right: 10px;
+}
+
+.filter input {
+  flex-grow: 1;
+  max-width: 200px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+  margin-right: 5px; /* Add space between input box and text label */
+}
+
+.filter input:focus {
+  border-color: #007bff;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .filter input {
+    width: 100%; /* Set input fields to full width on smaller screens */
+    max-width: none; /* Reset max-width for input fields */
+    margin-right: 0; /* Remove margin-right */
+  }
+
+  .filter label {
+    margin-right: 0; /* Remove margin-right for labels */
+    margin-bottom: 5px; /* Add margin-bottom for labels on smaller screens */
+  }
+}
