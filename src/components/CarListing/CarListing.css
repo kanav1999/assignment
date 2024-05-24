@@ -1,0 +1,71 @@
+/* src/components/CarListing.css */
+.car-card {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.car-details {
+  padding: 15px;
+}
+
+.car-details p {
+  margin: 5px 0;
+}
+
+.car-details p:first-child {
+  font-weight: bold;
+}
+/* Subtle box shadows */
+.filter input {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.car-listing {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add animation to car listings */
+.car-listing {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-listing:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* src/components/CarListing/CarListing.css */
+
+/* Animation for card section text */
+.details {
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Add transition for smoother animation */
+}
+
+.car-listing:hover .details {
+  opacity: 1;
+}
+/* Styles for input text */
+.details p {
+  font-size: 30px; /* Example font size */
+  color: #170634; /* Example text color */
+  margin: 5px 0; /* Example margin */
+  font-weight: bold; /* Make text bold */
+}
